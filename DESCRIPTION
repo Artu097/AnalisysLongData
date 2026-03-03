@@ -1,0 +1,13 @@
+Package: AnalisysLongData
+Title: Análisis de Datos Longitudinales con MCMC y C++
+Version: 0.1.0
+Author: Arturo González Cruz
+Maintainer: Arturo <artu.g.cruz97@gmail.com>
+Description: Paquete desarrollado para el servicio social que implementa algoritmos de agrupamiento y MCMC.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+Imports: 
+    Rcpp (>= 1.0.0)
+LinkingTo: 
+    Rcpp

@@ -1,0 +1,2 @@
+PKG_CPPFLAGS = -I$(GSL_HOME)/include
+PKG_LIBS = -L$(GSL_HOME)/lib/$(R_ARCH) -lgsl -lgslcblas
