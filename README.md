@@ -4,8 +4,13 @@ AnalisysLongData es un paquete de R diseñado para el agrupamiento (clustering) 
 devtools::install_github("Artu097/AnalisysLongData")
 Uso BásicoPara realizar una simulación o análisis de trayectorias, solo necesitas una matriz de datos donde cada fila represente a un individuo y cada columna un punto en el tiempo.Rlibrary(AnalisysLongData)
 
-# 1. Preparar tus datos (Matriz de n x m)
-# Ejemplo: datos_mat <- as.matrix(mi_archivo_imc)
+# 1. Cargar los datos de ejemplo incluidos en el paquete
+ruta_ejemplo <- system.file("extdata", "imc1.dat", package = "AnalisysLongData")
+
+# Leer y convertir a matriz (como lo hemos estado haciendo)
+datos_raw <- read.table(ruta_ejemplo, header = FALSE, sep = " ")
+datos_mat <- as.matrix(datos_raw)
+datos_mat <- matrix(as.numeric(datos_mat), nrow = nrow(datos_mat))
 
 # 2. Definir parámetros de la Medida Base (m0, c0, a0, b0)
 P0 <- matrix(c(0, 40, 0.1, 0.1), nrow = 1, ncol = 4)
