@@ -17,7 +17,7 @@ Solo necesitas una matriz de datos donde cada fila represente a un individuo y c
 # 1. Cargar los datos de ejemplo incluidos en el paquete
 ruta_ejemplo <- system.file("extdata", "imc1.dat", package = "AnalisysLongData")
 
-# Leer y convertir a matriz (como lo hemos estado haciendo)
+# Leer y convertir a matriz
 datos_raw <- read.table(ruta_ejemplo, header = FALSE, sep = " ")
 
 datos_mat <- as.matrix(datos_raw)
