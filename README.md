@@ -7,7 +7,8 @@ https://cran.r-project.org/bin/windows/Rtools/
 
 Además de icontar con devtools:
 R# Si no tienes devtools instalado:
-# install.packages("devtools")
+
+install.packages("devtools")
 
 devtools::install_github("Artu097/AnalisysLongData")
 Uso BásicoPara realizar una simulación o análisis de trayectorias.
