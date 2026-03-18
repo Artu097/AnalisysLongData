@@ -46,4 +46,7 @@ pp_final <- resultado$p[nrow(resultado$p), ]
 
 generar_graficas_grupos(datos_mat, resultado$th, pp_final, getwd())
 
-Parámetros de SimulaciónPara que otro usuario realice sus propias simulaciones, estos son los valores que puede ajustar:ParámetroDescripciónValor sugeridodataMatriz numérica de trayectorias (sin NAs preferentemente).Datos de IMC longitudinal.baseMeasureParámetros $P_0$ para la distribución base ($m_0, c_0, a_0, b_0$).matrix(c(0, 40, 0.1, 0.1), 1, 4)rParámetro de concentración del proceso de Dirichlet.Mayor $r = $ más grupos detectados.iterationsVector con c(BurnIn, Sampling).c(1000, 1000) para estabilidad.
+Parámetros de SimulaciónPara que otro usuario realice sus propias simulaciones, estos son los valores que puede ajustar:
+ParámetroDescripciónValor sugeridodataMatriz numérica de trayectorias (sin NAs preferentemente).
+Datos de IMC longitudinal.baseMeasureParámetros $P_0$ para la distribución base ($m_0, c_0, a_0, b_0$).matrix(c(0, 40, 0.1, 0.1), 1, 4)r
+Parámetro de concentración del proceso de Dirichlet.Mayor $r = $ más grupos detectados.iterationsVector con c(BurnIn, Sampling).c(1000, 1000) para estabilidad.
